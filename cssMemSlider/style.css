@@ -22,9 +22,6 @@
   border-radius: 10px;
   background: #eee;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #slide-1{
@@ -43,17 +40,12 @@
    background-image: url(http://habrastorage.org/files/e59/424/c04/e59424c046be4dab897d84ab015c87ea.jpg);
 }
 
-.slider > a {
+.wrapper > a {
   display: inline-flex;
   width: 1.5rem;
   height: 1.5rem;
-  background: white;
   text-decoration: none;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
   margin: 0 0 0.5rem 0;
-  position: relative;
 }
 
 html, body {
