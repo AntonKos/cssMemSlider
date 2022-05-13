@@ -2,43 +2,45 @@
   box-sizing: border-box;
 }
 
-.slider {
-  width: 400px;
+.wrapper {
+  width: 300px;
   text-align: center;
   overflow: hidden;
 }
 
 .slides {
   display: flex;
-  overflow-x:hidden;
+  overflow:hidden;
   scroll-behavior: smooth;
 }
 
 .slides > div {
-  scroll-snap-align: start;
   flex-shrink: 0;
   width: 300px;
   height: 300px;
   margin-right: 50px;
   border-radius: 10px;
   background: #eee;
-  transform-origin: center center;
-  transform: scale(1);
-  transition: transform 0.5s;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 100px;
 }
 
-img {
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+#slide-1{
+  background-image: url(http://habrastorage.org/files/3f2/628/bd5/3f2628bd58c8452db516195cb0c9bfc9.jpg);
+}
+
+#slide-2{
+   background-image: url(http://habrastorage.org/files/3e1/95d/c7f/3e195dc7f5a64469807f49a14f97ba0e.jpg); 
+}
+
+#slide-3{
+  background-image: url(http://habrastorage.org/files/663/6b1/d4f/6636b1d4f8e643d29eab8c192fc1cea3.jpg);
+}
+
+#slide-4{
+   background-image: url(http://habrastorage.org/files/e59/424/c04/e59424c046be4dab897d84ab015c87ea.jpg);
 }
 
 .slider > a {
