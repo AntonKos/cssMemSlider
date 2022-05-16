@@ -12,6 +12,7 @@
   display: flex;
   overflow:hidden;
   scroll-behavior: smooth;
+  margin-bottom: 20px;
 }
 
 .slides > div {
@@ -20,9 +21,22 @@
   height: 300px;
   margin-right: 50px;
   border-radius: 10px;
-  background: #eee;
   position: relative;
 }
+
+a{
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+
 
 #slide-1{
   background-image: url(http://habrastorage.org/files/3f2/628/bd5/3f2628bd58c8452db516195cb0c9bfc9.jpg);
@@ -42,10 +56,22 @@
 
 .wrapper > a {
   display: inline-flex;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1rem;
+  height: 1rem;
   text-decoration: none;
-  margin: 0 0 0.5rem 0;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+  background: rgb(24, 149, 217);
+}
+
+.wrapper > a:active {
+  top: 1px;
+}
+.wrapper > a:focus {
+  background: #000;
 }
 
 html, body {
